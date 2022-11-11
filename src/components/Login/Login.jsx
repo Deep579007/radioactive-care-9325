@@ -10,9 +10,9 @@ const Login = () => {
 
   const formSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem("Mobile",data)
-    alert("OTP has been sent to Mobile number");
-       navigate("/LoginAuth")
+    // localStorage.setItem("Mobile",data)
+    // alert("OTP has been sent to Mobile number");
+    //    navigate("/LoginAuth")
   };
 
   return (
