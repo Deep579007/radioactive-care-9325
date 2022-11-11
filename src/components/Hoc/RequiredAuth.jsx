@@ -10,11 +10,7 @@ const RequiredAuth = ({children}) => {
         return (
             <Navigate to="/"></Navigate>
             )
-
     }
 }
 
 export default RequiredAuth
-
-//  fw17_1047_day-4
-//  fw17_1047_day-5
