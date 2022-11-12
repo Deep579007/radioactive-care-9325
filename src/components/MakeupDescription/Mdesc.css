@@ -1,0 +1,312 @@
+
+
+button,.pointer{
+    cursor: pointer;
+
+}
+
+.biggy{
+    padding: 20px 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.biggy *{
+    font-weight: 500;
+}
+
+
+
+.headerImg{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.subMain{
+    display: flex;
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+}
+
+.mainImgBox {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.rightMain{
+    width: 60%;
+}
+
+.mainImgBox img{
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+}
+
+.forSpans span{
+   margin-right: 40px;
+}
+
+.timer{
+    height: 40px;
+    background-color: #ff9c01;
+    font-weight: bold;
+}
+
+.timer div img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.title{
+    
+    font-size: 19px;
+    font-weight: 800;
+    color: #333333;
+    padding-bottom: 8px;
+}
+
+.forSpans{
+    padding-bottom: 8px;
+}
+
+.forSpans span{
+     font-size: 15px;
+     color: #333333;
+     font-weight: bold;
+}
+
+.forSpans span span{
+    font-weight: 600;
+    color: #999999;
+}
+
+.timer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.timerLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timerRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock11{
+    width: 100px;
+    /* background-color: #fff; */
+    box-sizing: border-box;
+}
+
+
+
+/* Price */
+
+
+.price{
+    background-color: #f3f3f3;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    
+   
+}
+
+.label{
+    color: #999;
+    font-weight: bold;
+    font-size: 15px;
+    width: 140px;
+}
+
+.price1{
+    font-family: inherit;
+    color: #ff9c01;
+    font-size: 28px;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+
+.price2{
+    color: rgb(120, 117, 117);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.price3{
+  background-color:#ff9c01 ;
+  color: white;
+  font-weight: bold;
+  padding: 3px;
+  margin-right: 6px;
+}
+
+/* Ship */
+.shipFrom{
+    padding-left: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.shipName{
+    border: 1px solid #074ea3;
+    color: #074ea3;
+    font-weight: 600;
+    padding: 7px;
+}
+
+.qty{
+    height: 60px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  
+}
+
+.counter,.counterBox{
+    width: 40px;
+    height: 30px;
+    font-size: 1.33rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.counterBox{
+    width: 50px;
+    border: 1px solid rgb(100, 99, 99);
+    background-color: rgb(242, 242, 242);
+}
+
+/* Buttons */
+.buttons{
+   margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+  
+
+.buyNow,.addToCart{
+    border: .5px solid #ff9c01;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ff9c01;
+    background-color: #FFF5E5;
+    padding: 10px 20px;
+    margin-right: 20px;
+
+
+}
+
+.addToCart{
+    background-color: #ff9c01;
+    color: white;
+}
+
+.addToCart:active{
+    background-color: rgb(71, 196, 36);
+    border: .5px solid #0fe42b;
+}
+
+
+
+.wishList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wishList span{
+    color: #333333;
+}
+
+.wishList img{
+    width: 25px;
+    margin-right: 5px;
+    
+}
+
+.paypal{
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+}
+
+.paypal img{
+    width: 100px;
+}
+
+/****************  
+    Footer
+ **************/
+
+ .footer > div img{
+    width: 34px;
+    margin: auto;
+
+ }
+
+
+.footer p{
+    font-size: 14.5px;
+    margin: 0;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 60px;
+    display: flex;
+   justify-content: space-between;
+   gap: 12px;
+   padding: 0;
+
+    
+}
+
+
+@media (max-width:850px){
+    .subMain{
+        flex-direction: column;
+    }
+
+    .mainImgBox{
+        width: 100%;
+
+    }
+
+    .rightMain{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .addToCart, .buyNow{
+       width:300px ;
+       text-align: center;
+       margin: 10px 30px;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .salesEnd{
+        background: red;
+        display: none;
+        font-size: 1rem;
+    }
+    
+  
+}
