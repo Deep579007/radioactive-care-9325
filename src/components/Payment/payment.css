@@ -1,0 +1,10 @@
+@media (max-width:800px){
+    .paymentMain{
+        flex-direction: column;
+    }
+
+    .forOrder{
+        order: -1;
+    }
+
+}
