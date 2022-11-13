@@ -1,0 +1,88 @@
+.donebtn{
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ffb703;
+    border: none;
+   
+}
+
+.card{
+    font-weight: bold;
+}
+.card h3{
+    margin: 0;
+    margin-bottom: 20px;
+
+}
+
+.card .tags{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.card .topTwo{
+    width: 375px;
+    height: 32px;
+    border: .4px solid black;
+}
+
+.card .select1{
+    width: 105px;
+    height: 32px;
+   
+}
+.select1{
+    box-sizing: border-box;
+}
+
+.card .three{
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card option{
+   padding: 2px;
+}
+
+.card .checky{
+    display: flex;
+    margin: 22px 0;
+
+}
+.card .c4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.card .padLeft {
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.card .donebtn{
+    margin-top: -20px;
+}
+.card .focus{
+    border-radius: 6px;
+}
+.card .focus:hover{
+    
+   border-color: #614f30;
+  
+}
+.card .focus:focus{
+    border: .4px solid floralwhite;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+}
+
+.card .bottom{
+    font-size: 12px;
+}
+
