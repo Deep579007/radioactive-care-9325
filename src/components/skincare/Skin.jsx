@@ -40,23 +40,23 @@ const Skin=()=>{
     <Newnav/>
     {/* Top Banner after nav starts from here */}
     <div id="banner">
-       <div id="div1">
-         <img id="img1" src="https://d32baadbbpueqt.cloudfront.net/Collection/39da2bc6-d83c-4350-a2b1-0c0ec7a721a8.jpg" alt=""/> 
+       <div id="div1S">
+         <img id="img1S" src="https://d32baadbbpueqt.cloudfront.net/Collection/39da2bc6-d83c-4350-a2b1-0c0ec7a721a8.jpg" alt=""/> 
        </div>
     </div>
     {/* Top Banner after nav ends from here */}
 
     {/* Breadcrum after banner starts from here */}
-    <div id="div2">
+    <div id="div2S">
     <div id="left">
         <p>Home</p> <p>/</p><p style={{fontWeight:"bold",color:"black"}}>SkinCare Products</p>
     </div>
     </div>
 
     {/*Product Display starts from here*/}
-    <div style={{display:"flex"}}>
-    <div style={{marginLeft:"2%"}}>
-    <FormControl fullWidth>
+    <div  id="parentCatS" >
+    <div id="sortingS">
+    <FormControl style={{width:"100%"}}>
     <InputLabel >Relevance</InputLabel>
             <Select  onChange={(e)=>handleSortByPrice(e)} style={{width:"300px",color:"black"}}>
                 <MenuItem value='l2h'>Low to high</MenuItem>
@@ -64,7 +64,7 @@ const Skin=()=>{
             </Select>
     </FormControl>
     </div>
-    <div id="container">
+    <div id="containerS">
         {data.map((e)=><MakeupCard key={e.id} id={e.id} image={e.image} title={e.title} price={e.price} rating={e.rating}/>)}
     </div>
     </div>

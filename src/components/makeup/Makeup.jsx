@@ -27,7 +27,6 @@ const Makeup=()=>{
         else{
             setData(data)
         }
-  
       }
 
     useEffect(()=>{
@@ -40,31 +39,31 @@ const Makeup=()=>{
     <Newnav/>
     {/* Top Banner after nav starts from here */}
     <div id="banner">
-       <div id="div1">
-         <img id="img1" src="https://d32baadbbpueqt.cloudfront.net/Collection/39da2bc6-d83c-4350-a2b1-0c0ec7a721a8.jpg" alt=""/> 
+       <div id="div1M">
+         <img id="img1M" src="https://d32baadbbpueqt.cloudfront.net/Collection/39da2bc6-d83c-4350-a2b1-0c0ec7a721a8.jpg" alt=""/> 
        </div>
     </div>
     {/* Top Banner after nav ends from here */}
 
     {/* Breadcrum after banner starts from here */}
-    <div id="div2">
+    <div id="div2M">
     <div id="left">
         <p>Home</p> <p>/</p><p style={{fontWeight:"bold",color:"black"}}>Makeup</p>
     </div>
     </div>
 
     {/*Product Display starts from here*/}
-    <div style={{display:"flex"}}>
-    <div style={{marginLeft:"2%"}}>
-    <FormControl fullWidth>
+    <div id="parentCatM" >
+    <div id="sortingM" >
+    <FormControl style={{width:"100%"}}>
     <InputLabel >Relevance</InputLabel>
-            <Select  onChange={(e)=>handleSortByPrice(e)} style={{width:"300px",color:"black"}}>
+            <Select  onChange={(e)=>handleSortByPrice(e)} style={{width:"100%",color:"black"}}>
                 <MenuItem value='l2h'>Low to high</MenuItem>
                 <MenuItem value='h2l'>High to low</MenuItem>
             </Select>
     </FormControl>
     </div>
-    <div id="container">
+    <div id="containerM">
         {data.map((e)=><MakeupCard key={e.id} id={e.id} image={e.image} title={e.title} price={e.price} rating={e.rating}/>)}
     </div>
     </div>
