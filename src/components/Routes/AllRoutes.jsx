@@ -10,16 +10,22 @@ import Makeup from '../makeup/Makeup';
 import Skin from '../skincare/Skin';
 import Mdec from '../MakeupDescription/Mdec';
 import Sdec from '../SkinDescription/Sdec';
-import Login from '../Login/Login';
-import LoginAuth from '../Login/LoginAuth';
+
+import LoginAuth from '../Login_V/LoginAuth';
 import RequiredAuth from '../Hoc/RequiredAuth';
+import Login_V from '../Login_V/Login_V';
+import Login from '../New_Component/Login/Login';
+import Signup from '../New_Component/Signup/Signup';
 // import Makeup from '../Makeup/Makeup';
 const AllRoutes = () => {
   return (
     <Routes>
         <Route path='/' element={<Homepage/>}/>
-        <Route path='/login' element={<Login/>}/>
+        <Route path='/loginV' element={<Login_V/>}/>
         <Route path='/LoginAuth' element={<LoginAuth/>}/>
+        <Route path='/Login' element={<Login/>}/>
+        <Route path='/signup' element={<Signup/>}/>
+
 
         <Route path='/brush' element={<Brush/>}/>
         <Route path='/makeup' element={<Makeup/>}/>

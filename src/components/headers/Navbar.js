@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="right">
           <div className="nav_btn">
             {
-                mobile && Otp ? <button className="logout" onClick={handleLogout}>Logout</button> : <a href="/login">Login/Register</a>
+                mobile && Otp ? <button className="logout" onClick={handleLogout}>Logout</button> : <a href="/loginv">Login/Register</a>
             }
             
           </div>
