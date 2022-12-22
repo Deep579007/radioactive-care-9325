@@ -83,7 +83,7 @@ const Signup = () => {
         setLoading(true);
 
         const { data } = await axios.post(
-          "http://localhost:8084/api/users",
+          "http://localhost:8085/api/users",
           { name, email, password, phone, picture },
           config
         );

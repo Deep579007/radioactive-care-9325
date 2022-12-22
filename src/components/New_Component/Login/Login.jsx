@@ -51,7 +51,7 @@ const Login = () => {
         setLoading(true);
 
         const { data } = await axios.post(
-          "http://localhost:8084/api/users/login",
+          "http://localhost:8085/api/users/login",
           {
             email,
             password,
@@ -67,7 +67,7 @@ const Login = () => {
         toast.success("User Login Successfuly", {
           position: "top-center",
         });
-        navigate("/mainhome")
+        navigate("/")
 
         setLoading(false);
       }

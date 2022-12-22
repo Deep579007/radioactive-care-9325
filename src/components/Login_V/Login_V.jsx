@@ -51,6 +51,7 @@ const Login_V = () => {
                 onChange={(e) => setData(e.target.value)}
                 className="input"
                 maxLength={10}
+                required
               />
               {data < 1000000000 && data > 0 ? (
                 <div
@@ -69,7 +70,6 @@ const Login_V = () => {
                     Please enter a valid 10-digit mobile number
                   </span>
                 </div>
-                
               ) : (
                 ""
               )}
@@ -94,27 +94,28 @@ const Login_V = () => {
             >
               Request OTP
             </Button>
-            <Link to="/login" >
-            <Button
-              type="submit"
-              sx={{
-                cursor: "pointer",
-                backgroundColor: "#333333",
-                color: "#ffffff",
-                width: "170px",
-                height: "41px",
-                padding: "10px",
-                margin: "10px 0px 0px 5px",
-                borderRadius: "0px",
-                "&:hover": {
+            <Link to="/login">
+              <Button
+                type="submit"
+                sx={{
+                  cursor: "pointer",
                   backgroundColor: "#333333",
                   color: "#ffffff",
-                },
-              }}
+                  width: "170px",
+                  height: "41px",
+                  padding: "10px",
+                  margin: "10px 0px 0px 5px",
+                  borderRadius: "0px",
+
+                  "&:hover": {
+                    backgroundColor: "#333333",
+                    color: "#ffffff",
+                  },
+                }}
               >
-             Register  With Email 
-            </Button>
-                </Link>
+                Register With Email
+              </Button>
+            </Link>
           </form>
           <Box
             sx={{
