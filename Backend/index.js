@@ -16,6 +16,7 @@ app.get("/", (req, res) => {
   res.send("FROM HOME");
 });
 const PORT = 8085;
+// app.use("/api/users", userRoutes);
 app.use("/api/users", userRoutes);
 
 authConnection();
