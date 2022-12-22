@@ -16,7 +16,7 @@ const Navigate= useNavigate()
   return (
     
     <div className="box">
-      <Link to={`/brush${id}`}  style={{ textDecoration: 'none' }}>
+      <Link to={`/brush/${id}`}  style={{ textDecoration: 'none' }}>
       <img src={image} alt={title} />
       <h3>{title}</h3>
       <p>Rs. {price}</p>
@@ -34,7 +34,7 @@ const Navigate= useNavigate()
           sx={{ color: grey[800], "&.Mui-checked": { color: red[600] } }}
         />
         </Box>
-        <Button  onClick={()=>Navigate(`/brush${id}`)} style={{height:"100%",width:"75%",fontWeight:"600"}} variant="contained" id="cartbutton">Add To Cart</Button>
+        <Button  onClick={()=>Navigate(`/brush/${id}`)} style={{height:"100%",width:"75%",fontWeight:"600"}} variant="contained" id="cartbutton">Add To Cart</Button>
       </div>
     </div>
     

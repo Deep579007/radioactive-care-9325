@@ -31,9 +31,9 @@ const AllRoutes = () => {
           <Main/>
           </RequiredAuth>
           </ChakraProvider>}/>
-        <Route path='/brush:id' element={<ChakraProvider><Desc/></ChakraProvider>}/>
-        <Route path="/makeup:id" element={<ChakraProvider><Mdec/></ChakraProvider>}/>
-        <Route path="/skincare:id" element={<ChakraProvider><Sdec/></ChakraProvider>}/>
+        <Route path='/brush/:id' element={<ChakraProvider><Desc/></ChakraProvider>}/>
+        <Route path="/makeup/:id" element={<ChakraProvider><Mdec/></ChakraProvider>}/>
+        <Route path="/skincare/:id" element={<ChakraProvider><Sdec/></ChakraProvider>}/>
         <Route path='/payment' element={<ChakraProvider><Done/></ChakraProvider>}/>
     </Routes>
   )
