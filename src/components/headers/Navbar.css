@@ -145,13 +145,6 @@ header nav .right .cart_btn p{
     text-decoration: none;
 }
 
-header nav .avtar{
-    cursor: pointer;
-}
-header nav .avtar2{
-    cursor: pointer;
-    background-color: #1365cf;
-}
 
 header .hamburgur{
     display: none;
@@ -178,31 +171,16 @@ header nav .drawer{
 
 
 
-@media (max-width:800px){
-    header .hamburgur{
-        display: block;
-    }
-    header nav{
-        overflow: hidden;
-    }
-    header nav .right .nav_btn,
-    header nav .right .avtar2,
-    header nav .right .avtar{
-        display:none;
-    }
-    header nav .left input{
-        width: 150px;
-        margin-left: 10px;
-    }
-
-    header nav .left input::placeholder{
-        visibility: hidden;
-    }
-  
-    header nav .right .cart_btn{
-        margin-right: 0;
-    }
+@media (min-width:300px)and(max-width:851px){
     
+    header nav .left{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        /* border: 2px solid red; */
+        flex: .7;
+        margin-left: 80px;
+    }
     
 }
 
@@ -213,9 +191,9 @@ header nav .drawer{
     }
     
     header nav .left .search_icon{
-        /* color: #fff;
-        font-size: 18px; */
-        /* background-color: whitesmoke;  */
+        color: #fff;
+        font-size: 18px;
+        background-color: whitesmoke; 
         display: none;
     }
     header nav .navlogo img{

@@ -1,103 +1,80 @@
 import React from 'react'
-import './Footer.css'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import { Divider } from '@mui/material';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import EmailIcon from '@mui/icons-material/Email';
-import PinterestIcon from '@mui/icons-material/Pinterest';
-const Footer = () => {
-    return (
-        <footer>
-            <div className='footer_container' style={{ border: "1px solid black", height: "500px", backgroundColor: "black" }}>
-                {/* <div style={{border:"1px solid black",height:"200px"}}>
-        <p>READ MORE ABOUT SUGAR COSMETICS</p>
-        <h2 style={{textAlign:"center"}}>LET'S STAY IN TOUCH</h2>
-        <p style={{textAlign:"center"}}>Get the latest beauty tips straight to your inbox. Cant wait to connect!</p>
-        <div>
-            <input style={{margin:"auto",display:"block"}} type="text" placeholder="Enter Email"></input>
-            <button style={{margin:"auto",display:"block"}}>SUBSCRIBE</button>
+import { AiOutlineTwitter } from 'react-icons/ai'
+import styles from './Footer.module.css'
+
+function Footer() {
+  return (
+    <>
+      <div className={styles.container}>
+        <div className={styles.div1}>
+          <img style={{ height: "120px",marginLeft:"530px" }} src="./CosmoStore.png" alt="" />
         </div>
-    </div> */}
-                <div style={{ width: "100%" }}>
-                    <img style={{ marginLeft: "580px" }} src='./CosmoStore.png' alt='' />
-                    <Divider />
-                    <div style={{ marginLeft: "680px" }}>
-                        <FacebookIcon />
-                        <TwitterIcon />
-                        <YouTubeIcon />
-                        <InstagramIcon />
-                        <EmailIcon />
-                        <PinterestIcon />
-                    </div>
-                    <Divider style={{
-                        backgroundColor: "white"
-                    }} />
-                    <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-                        <h3>Store</h3>
-                        <h3>Terms & Conditions</h3>
-                        <h3>Returns</h3>
-                        <h3>FAQs</h3>
-                        <h3>About Us</h3>
-                    </div>
-                    <Divider style={{
-                        backgroundColor: "white"
-                    }} />
-                    <h2 style={{marginLeft:"100px"}}>GET IN TOUCH</h2>
-                    <div className='footer_container'>
-                        <div className='footr_details_one'>
-                            <h3>Call us at</h3>
-                            <p>1800-209-9933</p>
-                            <p>Monday to Friday : 9 AM to 7 PM</p>
-                        </div>
-                        <div className='footr_details_one'>
-                            <h3>Support</h3>
-                            <p>hello@sugarcosmetics.com</p>
-
-                        </div>
-                        <div className='footr_details_one'>
-                            <h3>Careers</h3>
-                            <p>We're hiring!</p>
-
-                        </div>
-                        <div className='footr_details_one'>
-                            <h3>Press & Media</h3>
-                            <p>pr@sugarcosmetics.com</p>
-
-                        </div>
-                        <div className='footr_details_one'>
-                            <h3>Influencer Collab</h3>
-                            <p>Join Us</p>
-
-                        </div>
-
-                    </div>
-                    <Divider style={{
-                        backgroundColor: "white",
-                        marginTop: "40px"
-                    }} />
-                    <div>
-                        <h3 style={{ marginLeft: "400px",marginTop:"50px" }}>GET THE NEW SUGAR APP TODAY!</h3>
-                        <p style={{ marginLeft: "400px" }}>Tap into a better shopping experience.</p>
-                        
-                    </div>
-                    <div style={{marginTop:"-25px"}}>
-                    <img style={{ marginLeft: "730px",width:"15%",marginTop:"-100px" }} src='https://in.sugarcosmetics.com/playstore.png' alt=''/>
-                    </div>
-                    <Divider style={{
-                        backgroundColor: "white",
-                        marginTop: "40px"
-                    }} />
-                    <p style={{textAlign:"center"}}>Copyright © 2022 SUGAR Cosmetics. All rights reserved.</p>
-                </div>
-
-
+        <div className={styles.div2}>
+          <a href='https://www.facebook.com/trySUGAR/' target="_blank"><img className={styles.imgdiv1} src="https://in.sugarcosmetics.com/desc-images/facebook.svg" alt="" /></a>
+          <a  href='https://twitter.com/trySUGAR' target="_blank"><AiOutlineTwitter  color='#999999'  fontSize='25px' /></a>
+          <a href='' target="_blank"><img className={styles.imgdiv1} src="https://in.sugarcosmetics.com/desc-images/Instagram.svg" alt="" /></a>
+          <a href='https://www.pinterest.com/sugarcosmetics/' target="_blank"><img className={styles.imgdiv1} src="https://in.sugarcosmetics.com/desc-images/Pinterest.svg" alt="" /></a>
+          <a href='https://sugarcosmetics-blog.tumblr.com/' target="_blank"><img className={styles.imgdiv1} src="https://in.sugarcosmetics.com/desc-images/Tumblr.svg" alt="" /></a>
+          <a href='https://www.youtube.com/channel/UCKVqnev2idvmUNKc2b91B8g' target="_blank"><img className={styles.imgdiv1} src="https://in.sugarcosmetics.com/desc-images/Youtube.svg" alt="" /></a>
+        </div>
+        <hr style={{ marginLeft: "40px", marginRight: "40px", marginTop: "42px" }} />
+        <div className={styles.div4} style={{ marginLeft: "90px", marginTop: "5px" }}>
+          <div style={{ display: "flex", marginTop: "30px" }}>
+            <a href='https://in.sugarcosmetics.com/stores' target="_blank">Stores</a>
+            <a href='https://in.sugarcosmetics.com/pages/terms-conditions' target="_blank">Terms and Conditions</a>
+            <a href='https://in.sugarcosmetics.com/pages/returns-refunds' target="_blank">Returns</a>
+            <a href='https://in.sugarcosmetics.com/pages/faqs' >FAQs</a>
+            <a href='https://in.sugarcosmetics.com/pages/about-us' target="_blank">About Us</a>
+          </div>
+        </div >
+        <hr style={{ marginLeft: "40px", marginRight: "40px", marginTop: "42px" }} />
+        <div style={{ marginLeft: "90px", marginTop: "25px" }}>
+          <p style={{ color: "white", fontSize: "24px" , textAlign:'left'}}>GET IN TOUCH</p>
+        </div>
+        <div className={styles.ugly} style={{ marginLeft: "90px", marginTop: "5px", display: "flex",justifyContent:'space-evenly' ,fontFamily:"Roboto,sans-serif"}}>
+          <div>
+            <div style={{ display: "flex" }}><img style={{ marginTop: "6px", width: "20px", height: "15px" ,fontFamily:"Roboto,sans-serif"}} src="https://in.sugarcosmetics.com/desc-images/phone_android_white.svg" alt="" /><p style={{ color: "white", fontSize: "18px", fontWeight: "540" }}>Call us at</p></div>
+            <p style={{ fontSize: "18px", color: "rgb(153,153,153)", marginTop: "5px",textAlign:"left" ,fontFamily:"Roboto,sans-serif"}}>1800-209-9933</p>
+            <p style={{ fontSize: "small", color: "rgb(153,153,153)", marginTop: "5px" ,fontFamily:"Roboto,sans-serif"}}>Monday to Friday : 9 AM to 7 PM</p>
+          </div>
+          <div>
+            <p style={{ color: "white", fontSize: "18px", fontWeight: "700" ,textAlign:"left",fontFamily:"Roboto,sans-serif"}}>Support</p>
+            <p style={{ fontSize: "18px", color: "#969696", marginTop: "2px",fontFamily:"Roboto,sans-serif" }}>hello@sugarcosmetics.com</p>
+          </div>
+          <div>
+            <p style={{ color: "white", fontSize: "18px", fontWeight: "700" ,textAlign:"left",fontFamily:"Roboto,sans-serif"}}>Careers</p>
+            <a style={{textDecoration:"none" }} href="https://in.sugarcosmetics.com/careers"><p style={{ fontSize: "18px", color: "rgb(153,153,153)", marginTop: "3px",fontFamily:"Roboto,sans-serif" }}>We're hiring!</p></a>
+          </div>
+          <div>
+            <p style={{ color: "white", fontSize: "18px", fontWeight: "700",textAlign:"left" ,fontFamily:"Roboto,sans-serif"}}>Press & Media</p>
+            <p style={{ fontSize: "17px", color: "rgb(153,153,153)", marginTop: "3px" ,fontFamily:"Roboto,sans-serif" }}>pr@sugarcosmetics.com</p>
+          </div>
+          <div>
+            <p style={{ color: "white", fontSize: "17px", fontWeight: "700" ,textAlign:"left" ,fontFamily:"Roboto,sans-serif"}}>Influencer Collab</p>
+            <a href='https://blog.sugarcosmetics.com/collab' target="_blank" style={{  textDecoration: "none"}}><p style={{ fontSize: "18px", color: "rgb(153,153,153)", marginTop: "3px", textDecoration: "none", paddingTop: "-20px" ,textAlign:"left",fontFamily:"Roboto,sans-serif"}}>Join Us</p></a>
+          </div>
+        </div>
+        <hr style={{ marginLeft: "40px", marginRight: "40px", marginTop: "42px" }} />
+        <div style={{ marginLeft: "90px" }}>
+          <div className={styles.div3}>
+            <div className={styles.innerdiv3}>
+              <div className={styles.gtc}>
+                <p style={{ fontSize: "large" }}>GET THE NEW SUGAR APP TODAY!</p>
+                <p style={{ width: "400px", fontSize: "14px", color: "rgb(131,131,131)" ,marginTop:"3px" }}>Tap into a better shopping experience.</p>
+              </div>
+              <div style={{ display: "flex", gap: "20px"}}>
+                <a href='https://sugarcosmetics.app.link/WebFApp' target="_blank"><img style={{ height: "39px", width: "132px", marginTop: "15px" }} src="https://in.sugarcosmetics.com/playstore.png" alt="" /></a>
+                <a href='https://sugarcosmetics.app.link/WebFApp' target="_blank"><img style={{ height: "39px", width: "132px", marginTop: "15px" }} src="https://in.sugarcosmetics.com/apple-store.png" alt="" /></a>
+              </div>
             </div>
-        </footer >
+          </div>
+        </div>
+        <hr />
+        <div className={styles.cpr}><h3>Copyright © 2022 SUGAR Cosmetics. All rights reserved.</h3></div>
+      </div>
 
-
-    )
+    </>
+  )
 }
 
 export default Footer
