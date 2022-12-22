@@ -1,21 +1,46 @@
-import React from 'react'
 import "./newnav.css";
-
+import {Link} from "react-router-dom"
 const Newnav = () => {
+ 
   return (
+
     <div className='new_nav'>
-            <div className='nav_data'>
-                <div className='left_data'>
-                   <p>Makeup</p>
-                   <p>Brushes</p>
-                   <p>Skincare</p>
-                   <p>Gifting</p>
-                   <p>Blog</p>
-                   <p>Offers</p>
-                   <p>Stores</p>
-                 </div>
-            </div>
-     </div>
+      <div className='nav_data'>
+        <div className='left_data'>
+          <button >
+           
+          <Link style={{color:"white"}} to="/makeup">Makeup</Link>
+            </button>
+          <button >
+           
+          <Link style={{color:"white"}} to="/skincare">Skincare</Link>
+            </button>
+          <button >
+           
+          <Link style={{color:"white"}} to="/brush">Brush</Link>
+            </button>
+            <button >
+           
+          <Link style={{color:"white"}} to="/">Gifting</Link>
+            </button>
+            <button >
+           
+          <Link style={{color:"white"}} to="/">Blog</Link>
+            </button>
+            <button >
+           
+          <Link style={{color:"white"}} to="/">Offers</Link>
+            </button>
+            <button >
+           
+          <Link style={{color:"white"}} to="/">Stores</Link>
+            </button>
+          
+          
+        </div>
+      </div>
+    </div>
+
   )
 }
 

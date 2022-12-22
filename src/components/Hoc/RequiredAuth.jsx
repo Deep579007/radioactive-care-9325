@@ -8,7 +8,7 @@ const RequiredAuth = ({children}) => {
         return children
      }else{
         return (
-            <Navigate to="/"></Navigate>
+            <Navigate to="/login"></Navigate>
             )
     }
 }

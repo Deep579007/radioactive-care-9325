@@ -60,8 +60,8 @@ const Slide = () => {
                                 <p className='products_explore'>{e.price}</p>
                                 <div className='cart_btn'>
                                     <Badge color="primary">
-                                        <FavoriteBorderIcon id="icon" />
-                                        <Button>Add To Cart</Button>
+                                        <FavoriteBorderIcon style={{marginTop:"24px"}}/>
+                                        <Button style={{backgroundColor:"black",color:"white",marginLeft:"10px",marginTop:"20px"}}>Add To Cart</Button>
                                     </Badge>
                                 </div>
                                 

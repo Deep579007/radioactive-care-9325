@@ -7,6 +7,18 @@
     top: 60px;
 }
 
+.new_nav .nav_data .left_data button{
+    background-color: #141414;
+    width: 7%;
+    border: 1px solid  #141414;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-left: -10px;
+}
+
+
 .new_nav .nav_data{
     display: flex;
     justify-content:space-between;
@@ -20,12 +32,14 @@
     gap: 80px;
     margin-left: 30px;
 
+
 }
 
-.new_nav .nav_data .left_data p{
-    color: #fff;
+.new_nav .nav_data .left_data option{
+    color: black;
     font-weight: 500;
     font-size: 15px;
+    background-color: white;
 }
 
 /* media query */
@@ -34,3 +48,5 @@
        display: none;
     }
 }
+
+

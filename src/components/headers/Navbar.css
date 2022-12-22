@@ -68,6 +68,7 @@ header nav .nav_searchbaar #intext{
     width: 600px;
     height: 40px;
     border-radius: 10px;
+    color:white;
     border-color: white;
 }
 
@@ -93,7 +94,17 @@ header nav .right .nav_btn a{
     padding: 8px;
 }
 
+header nav .right .nav_btn .logout{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    border-radius: 2px;
+}
 
+header nav .right .nav_btn .logout:hover{
+    border: 1px solid white;
+}
 
 header nav .right .nav_btn a:hover{
     border: 1px solid white;
@@ -106,7 +117,7 @@ header nav .right .cart_btn{
     margin-top: 2px;
     padding: 8px;
     border-radius: 2px;
-    border: 1px solid #131921;
+    border: 1px solid black;
     align-items: center;
     justify-content: space-between;
     margin-right: 3px;
@@ -118,8 +129,8 @@ header nav .right .cart_btn:hover{
 
 header nav .right .cart_btn #icon{
     margin-right: 10px;
-    color: #fff;
-    margin-top: 2px;
+    color: #fff; 
+    /* /* margin-top: 2px; */
 }
 
 header nav .right .cart_btn p{
