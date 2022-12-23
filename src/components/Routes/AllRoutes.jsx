@@ -15,7 +15,7 @@ import LoginAuth from '../Login_V/LoginAuth';
 import RequiredAuth from '../Hoc/RequiredAuth';
 import Login_V from '../Login_V/Login_V';
 import Login from '../New_Component/Login/Login';
-// import Signup from '../New_Component/Signup/Signup';
+import Signup from '../New_Component/Signup/Signup';
 // import Makeup from '../Makeup/Makeup';
 const AllRoutes = () => {
   return (
@@ -24,7 +24,7 @@ const AllRoutes = () => {
         <Route path='/loginV' element={<Login_V/>}/>
         <Route path='/LoginAuth' element={<LoginAuth/>}/>
         <Route path='/Login' element={<Login/>}/>
-        {/* <Route path='/signup' element={<Signup/>}/> */}
+        <Route path='/signup' element={<Signup/>}/>
 
 
         <Route path='/brush' element={<Brush/>}/>
