@@ -19,7 +19,7 @@ const Login_V = () => {
     <div className="LoginCon">
       <div>
         <div className="imgBox">
-          <img
+          <img className="imgL"
             src="https://media.sugarcosmetics.com/upload/authSIe2.jpg"
             width={"100%"}
             height={"645px"}

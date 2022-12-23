@@ -47,7 +47,7 @@ body{
     margin-top: 20px;
     margin-bottom: 10px;
 }
-@media (max-width:767px){
+@media (max-width:665px){
     .LoginCon{
         display: flex;
         width: 100%;
@@ -62,13 +62,17 @@ body{
         margin: auto;
         background-color: rgb(235,235,235);
     }
+    .imgL{
+        width: 100%;
+        height: 310px;
+    }
     .LoginCon{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
     .ImageLogo{
         width: 100%;
-        height: 645px;
+        height: 200px;
     }
     .inputB{
         display: grid;
