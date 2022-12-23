@@ -50,6 +50,7 @@ const Login_V = () => {
                 placeholder="Mobile Number"
                 onChange={(e) => setData(e.target.value)}
                 className="input"
+                style={{padding: "10px"}}
                 maxLength={10}
                 required
               />
@@ -75,15 +76,15 @@ const Login_V = () => {
               )}
               <br />
             </div>
-            <Button
+            <Button disabled={ data.length != 10 }
               type="submit"
               sx={{
                 cursor: "pointer",
-                backgroundColor: "#333333",
+                backgroundColor: "#494F54",
                 color: "#ffffff",
-                width: "130px",
+                width: "140px",
                 height: "41px",
-                padding: "10px",
+                padding: "15px",
                 margin: "10px 0px 0px 5px",
                 borderRadius: "0px",
                 "&:hover": {
@@ -93,7 +94,7 @@ const Login_V = () => {
               }}
             >
               Request OTP
-            </Button>
+            </Button> <h3>OR</h3>
             <Link to="/login">
               <Button
                 type="submit"
@@ -102,14 +103,15 @@ const Login_V = () => {
                   backgroundColor: "#333333",
                   color: "#ffffff",
                   width: "170px",
-                  height: "41px",
-                  padding: "10px",
+                  height: "45px",
+                  padding: "15px",
                   margin: "10px 0px 0px 5px",
                   borderRadius: "0px",
 
                   "&:hover": {
                     backgroundColor: "#333333",
-                    color: "#ffffff",
+                    color: "white",
+                    pointer:"cursor",
                   },
                 }}
               >

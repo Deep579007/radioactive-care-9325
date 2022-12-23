@@ -7,7 +7,7 @@ import { useState } from "react";
 import "./Login.css";
 import { Link, useNavigate } from 'react-router-dom';
 const LoginAuth = () => {
-  const [data,setData] = useState()
+  const [data,setData] = useState("")
     const navigate = useNavigate()
     const formSubmit = (e) => {
         e.preventDefault();
@@ -56,6 +56,7 @@ const LoginAuth = () => {
               onChange={(e) => setData(e.target.value)}
               className="inputB2"
               maxLength={4}
+              style={{padding:"10px"}}
             />
             </Box>
     {/* <HStack>
@@ -74,14 +75,14 @@ const LoginAuth = () => {
 
                 }}>Enter the 4 digit OTP received on your phone.</Box>
        <Box>
-                        <Button type="submit"
+                        <Button type="submit" disabled={data.length != 4}
                         sx={{
-                            backgroundColor:"#FC2779",
+                            backgroundColor:"#494F54",
                             fontFamily: "IBM Plex Sans, sans-serif",
                             fontSize:"15px",
                             color:"#ffffff",
                             borderRadius:"0px",
-                            width:"180px",
+                            width:"130px",
                             height:"41px",
                             "&:hover":{
                                 color:"#ffffff",
