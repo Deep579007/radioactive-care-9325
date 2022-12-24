@@ -6,6 +6,8 @@ import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import StorefrontIcon from "@mui/icons-material/Storefront";
+// import PersonIcon from '@mui/icons-material/Person';
+import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 
 import { Link } from "react-router-dom";
 
@@ -41,12 +43,26 @@ export default function Sidebar() {
                 Users
               </li>
             </Link>
-            <Link to="/products" className="link">
+            <Link to="/add" className="link">
+              <li className="sidebarListItem">
+                <PersonAddAltIcon className="sidebarIcon" />
+                
+                User
+              </li>
+            </Link>
+            <Link to="/addProduct" className="link">
+              <li className="sidebarListItem">
+                <StorefrontIcon className="sidebarIcon" />
+                Product
+              </li>
+            </Link>
+            <Link to="/product" className="link">
               <li className="sidebarListItem">
                 <StorefrontIcon className="sidebarIcon" />
                 Products
               </li>
             </Link>
+            
           </ul>
         </div>
 
