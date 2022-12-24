@@ -36,6 +36,12 @@ In this project we have tried to manipulate dom elements, styling using css and 
 <img src="https://i.ibb.co/ygDbGmw/Payment.png" alt="5" />
 <br/>
 <img src="https://i.imgur.com/NilQ4xh.jpeg" alt="5" />
+<br/>
+<img src="https://i.imgur.com/JoptQSP.jpeg" alt="5" />
+<br/>
+<img src="https://i.imgur.com/JoptQSP.jpeg" alt="5" />
+
+
 
 
 # HOW TO RUN LOCALLY
