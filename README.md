@@ -49,5 +49,5 @@ In this project we have tried to manipulate dom elements, styling using css and 
 
 Search functionality is not implemented yet
 
-# Contributers
-contributers--> Kalesha Baig, Shekhar Suman, Deepak Gedam ,Vishal Chaubey.
+# Contributors
+contributors--> Kalesha Baig, Shekhar Suman, Deepak Gedam ,Vishal Chaubey.
