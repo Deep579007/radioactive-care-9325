@@ -7,8 +7,6 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-
-
 import "./Brush.css"
 import BrushCard from "./BrushCard";
 import Footer from "../Footer/Footer";
@@ -42,31 +40,31 @@ const Brush=()=>{
     <Newnav/>
     {/* Top Banner after nav starts from here */}
     <div id="banner">
-       <div id="div1B">
-         <img id="img1B" src="https://d32baadbbpueqt.cloudfront.net/Collection/39da2bc6-d83c-4350-a2b1-0c0ec7a721a8.jpg" alt=""/> 
+       <div id="div1">
+         <img id="img1" src="https://d32baadbbpueqt.cloudfront.net/Collection/39da2bc6-d83c-4350-a2b1-0c0ec7a721a8.jpg" alt=""/> 
        </div>
     </div>
     {/* Top Banner after nav ends from here */}
 
     {/* Breadcrum after banner starts from here */}
-    <div id="div2B">
+    <div id="div2">
     <div id="left">
         <p>Home</p> <p>/</p><p style={{fontWeight:"bold",color:"black"}}>Brushes</p>
     </div>
     </div>
 
     {/*Product Display starts from here*/}
-    <div id="parentCatB" >
-    <div id="sortingB">
-    <FormControl style={{width:"100%"}}h>
-    <InputLabel >Relevance </InputLabel>
-            <Select  onChange={(e)=>handleSortByPrice(e)} style={{width:"100%",color:"black"}}>
+    <div style={{display:"flex"}}>
+    <div style={{marginLeft:"2%"}}>
+    <FormControl fullWidth>
+    <InputLabel >Relevance</InputLabel>
+            <Select  onChange={(e)=>handleSortByPrice(e)} style={{width:"300px",color:"black"}}>
                 <MenuItem value='l2h'>Low to high</MenuItem>
                 <MenuItem value='h2l'>High to low</MenuItem>
             </Select>
     </FormControl>
     </div>
-    <div id="containerB">
+    <div id="container">
         {data.map((e)=><BrushCard key={e.id} id={e.id} image={e.image} title={e.title} price={e.price} rating={e.rating}/>)}
     </div>
     </div>

@@ -26,7 +26,7 @@ function Clock() {
     },)
 
   return (
-    <div className="clockS">
+    <div className="clock">
         <span>{hours<10? `0${hours}`: hours}:</span>
         <span>{minutes<10? `0${minutes}`: minutes}:</span>
         <span>{seconds<10? `0${seconds}`: seconds}</span>

@@ -73,16 +73,13 @@ function Desc() {
         .catch(err=>{
             // console.log("postWishListObjError")
         })
-        setTimeout(() => {
-            Navigate('/wish')
-        }, 1000);
     }
 
   const lenObj = Object.keys(data).length
   return (
-    <div className='biggyB'>
-        <div className='mainB'>
-            <img className='headerImgB' src="https://img.gkbcdn.com/s3/bn/2205/1500x125-6271031b2b40c930d0488be9.jpg" alt="" />
+    <div className='biggy'>
+        <div className='main'>
+            <img className='headerImg' src="https://img.gkbcdn.com/s3/bn/2205/1500x125-6271031b2b40c930d0488be9.jpg" alt="" />
                 {lenObj===0 ?
 
                     <Center>
@@ -91,61 +88,61 @@ function Desc() {
 
                     </Center>
                     :
-                    <div className="subMainB">
-                    <div className="mainImgBoxB">
+                    <div className="subMain">
+                    <div className="mainImgBox">
                     <img  src={data.image} alt="watch" />
                     </div>
-                    <div  className="rightMainB">
-                    <p className='titleB'>{data.title}</p>
-                        <div className='forSpansB'>
+                    <div  className="rightMain">
+                    <p className='title'>{data.title}</p>
+                        <div className='forSpans'>
                         <span>Brand: <span>{data.cat}</span> </span>
                             <span>Item Code: <span>345617</span>
                             </span>
                         </div>
-                        <div className='timerB'>
-                            <div className='timerLeftB'>
+                        <div className='timer'>
+                            <div className='timerLeft'>
                                 <img src="https://cdn-icons-png.flaticon.com/128/3601/3601695.png" alt="" />
                                 <span style={{marginRight:10}}>
                                     FLASH DEAL
                                 </span>
     
                             </div>
-                            <div className="timerRightB">
+                            <div className="timerRight">
                              {/* <div classname='salesEnd'  style={{marginRight:20}}>Sales Ends in 2 hours </div> */}
-                             <div className='clock11B'>
+                             <div className='clock11'>
                                <Clock />
     
                              </div>
                             </div>
     
                         </div>
-                        <div className="dataB">
-                            <div className="priceB">
-                            <span className='labelB'>Price:</span><span className='price1'>&#8377;{data.offerPrice}</span><span className='price2'><s>&#8377;{data.strikedoffprice}</s></span><span className="price3">{randomOff()}OFF</span>
+                        <div className="data">
+                            <div className="price">
+                            <span className='label'>Price:</span><span className='price1'>&#8377;{data.offerPrice}</span><span className='price2'><s>&#8377;{data.strikedoffprice}</s></span><span className="price3">{randomOff()}OFF</span>
                             </div>
-                            <div className="shipFromB">
-                                <span className="labelB">Ship From: </span><span className='shipName'>China</span>
+                            <div className="shipFrom">
+                                <span className="label">Ship From: </span><span className='shipName'>China</span>
                             </div>
-                            <div className="qtyB">
-                                <span className="labelB">QTY:</span>
-                                <button className='counterB' onClick={remove}>-</button>
-                                <span className='counterBoxB'>{counter}</span>
-                                <button className='counterB' onClick={add}>+</button>
+                            <div className="qty">
+                                <span className="label">QTY:</span>
+                                <button className='counter' onClick={remove}>-</button>
+                                <span className='counterBox'>{counter}</span>
+                                <button className='counter' onClick={add}>+</button>
                             </div>
                         </div>
-                        <div className="buttonsB">
-                                <div onClick={()=>Navigate('/cart')} className="buyNowB pointerB">Buy Now </div>
-                                <div onClick={handleCart} className="addToCartB pointerB" >Add to Cart </div>
-                                <div onClick={handleLike} className="wishListB pointerB">
+                        <div className="buttons">
+                                <div onClick={()=>Navigate('/cart')} className="buyNow pointer">Buy Now </div>
+                                <div onClick={handleCart} className="addToCart pointer" >Add to Cart </div>
+                                <div onClick={handleLike} className="wishList pointer">
                                     <img src={liked ? filledLike : unfilledLike} />
-                                    <p className="wishTxtB">
+                                    <p className="wishTxt">
                                         Add to WishList
                                     </p>
                                 </div>
                                 
                         </div>
-                        <div className="paypalB">
-                            <span className="labelB">
+                        <div className="paypal">
+                            <span className="label">
                                 Payment:
                             </span>
                             <img src="https://cdn-icons-png.flaticon.com/128/196/196566.png" alt="" />
@@ -159,22 +156,22 @@ function Desc() {
                      <Center>
                      <Button w='280px' onClick={()=>Navigate('/brush')} colorScheme='telegram'><ArrowBackIcon boxSize='20px' />Back to Product Page </Button>
                      </Center>
-            <div className="footerB">
-       <div className="fourB">
+            <div className="footer">
+       <div className="four">
            <img src="https://cdn-icons-png.flaticon.com/128/2438/2438078.png" alt=""/>
-           <p className="textB">SECURE PAYMENTS</p>
+           <p className="text">SECURE PAYMENTS</p>
        </div>
-       <div className="fourB">
+       <div className="four">
         <img src="https://cdn-icons-png.flaticon.com/128/4766/4766928.png" alt=""/>
-        <p className="textB">CASH ON DELIVERY</p>
+        <p className="text">CASH ON DELIVERY</p>
     </div>
-    <div className="fourB">
+    <div className="four">
         <img src="https://cdn-icons-png.flaticon.com/128/1212/1212158.png" alt=""/>
-        <p className="textB">ASSURED QUALITY</p>
+        <p className="text">ASSURED QUALITY</p>
     </div>
-    <div className="fourB">
+    <div className="four">
         <img src="https://cdn-icons-png.flaticon.com/128/2271/2271113.png" alt=""/>
-        <p className="textB">EASY RETURNS</p>
+        <p className="text">EASY RETURNS</p>
     </div>
           </div>
         </div>

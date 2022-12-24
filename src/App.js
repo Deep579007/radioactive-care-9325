@@ -3,8 +3,8 @@ import AllRoutes from './components/Routes/AllRoutes';
 
 
 function App() {
-  return (<AllRoutes/>
-    
+  return (
+    <AllRoutes/>
   );
 }
 
