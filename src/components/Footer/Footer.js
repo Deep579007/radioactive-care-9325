@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiOutlineTwitter } from 'react-icons/ai'
 import styles from './Footer.module.css'
-//Footer Page
+
 function Footer() {
   return (
     <>

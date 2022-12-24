@@ -10,7 +10,7 @@ import Makeup from "../makeup/Makeup";
 import Skin from "../skincare/Skin";
 import Mdec from "../MakeupDescription/Mdec";
 import Sdec from "../SkinDescription/Sdec";
-
+import Wish from "../Wishlist/Wish"
 import LoginAuth from "../Login_V/LoginAuth";
 import RequiredAuth from "../Hoc/RequiredAuth";
 import Login_V from "../Login_V/Login_V";
@@ -25,7 +25,6 @@ const AllRoutes = () => {
       <Route path="/LoginAuth" element={<LoginAuth />} />
       <Route path="/Login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-
       <Route path="/brush" element={<Brush />} />
       <Route path="/makeup" element={<Makeup />} />
       <Route path="/skincare" element={<Skin />} />
@@ -41,7 +40,7 @@ const AllRoutes = () => {
         }
       />
       <Route
-        path="/brush:id"
+        path="/brush/:id"
         element={
           <ChakraProvider>
             <Desc />
@@ -49,7 +48,7 @@ const AllRoutes = () => {
         }
       />
       <Route
-        path="/makeup:id"
+        path="/makeup/:id"
         element={
           <ChakraProvider>
             <Mdec />
@@ -57,7 +56,7 @@ const AllRoutes = () => {
         }
       />
       <Route
-        path="/skincare:id"
+        path="/skincare/:id"
         element={
           <ChakraProvider>
             <Sdec />
@@ -68,10 +67,14 @@ const AllRoutes = () => {
         path="/payment"
         element={
           <ChakraProvider>
+            <RequiredAuth>
             <Done />
+            </RequiredAuth>
           </ChakraProvider>
         }
       />
+      
+      <Route path="/wish" element={<ChakraProvider><Wish/></ChakraProvider>}/>
     </Routes>
   );
 };

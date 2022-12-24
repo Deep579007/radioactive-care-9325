@@ -56,9 +56,11 @@ const Navbar = () => {
             
           </div>
           <div className="cart_btn">
+          <a href="/wish">
             <Badge color="primary" >
               <FavoriteBorderIcon style={{color:"white"}}/>
             </Badge>
+            </a>
           </div>
           <div className="cart_btn">
             <Badge color="primary">
