@@ -3,7 +3,6 @@
 
 Project:Make a clone of https://cosmo-store-pi.vercel.app/
 
-<!-- Blog link:https://sugarcosmetics-clone.netlify.app/ -->
 
 
 
@@ -15,8 +14,8 @@ In this project we have tried to manipulate dom elements, styling using css and 
 * React.js
 * CSS
 * JavaScript
-* Redux
-* React-Router
+* MongoDB
+* React-Router-dom
 * Chakra UI
 * Material UI
 
@@ -37,12 +36,18 @@ In this project we have tried to manipulate dom elements, styling using css and 
 <img src="https://i.ibb.co/ygDbGmw/Payment.png" alt="5" />
 
 
-# End Notes  📑
-In this project we have tried to achieve a near to perfect clone of the original website as much as possible. This entire journey of this construct week has given us experiences and we have learned lots of things by applying to the real website and it gave us a lot of confidence. Most of the features are added and functionality of the website is achieved.
+# HOW TO RUN LOCALLY
+
+1) go to vs code run=> git clone "repository address".
+2) cd radioactive-care-9325
+3) npm i
+4) open http://localhost:3000 in browser
+
+
 
 # Limitations 
 
-All pages are not responsive yet, pages are not properly visible on small screen devices as we were having only 5 days to complete the project.
+Search functionality is not implemented yet
 
 # Contributers
 contributers--> Kalesha Baig, Shekhar Suman, Deepak Gedam ,Vishal Chaubey.
