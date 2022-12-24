@@ -83,8 +83,8 @@
    flex-direction:column;
 }
 @media screen and (max-width: 851px) {
-    .imgdiv1{
-        
+    .div1 img{
+        margin-left: 20rem;
     }
     .div4 div{
         flex-direction: column;
@@ -99,7 +99,7 @@
       height: auto;
     }
     .gtc p{
-   margin-left: -560px;
+   margin-left: 1rem;
     }
     
     
@@ -108,7 +108,7 @@
 @media screen and (max-width: 1024px) {
     .div1 img{
         
-        margin-right: -500px;
+        margin-left: 20rem;
     }
     /* .div4 div{
         flex-direction: column;
