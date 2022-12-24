@@ -39,7 +39,7 @@ In this project we have tried to manipulate dom elements, styling using css and 
 <br/>
 <img src="https://i.imgur.com/JoptQSP.jpeg" alt="5" />
 <br/>
-<img src="https://i.imgur.com/JoptQSP.jpeg" alt="5" />
+<img src="https://i.imgur.com/nVPMiZg.jpeg" alt="5" />
 
 
 
