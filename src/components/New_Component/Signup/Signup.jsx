@@ -10,10 +10,9 @@ import axios from "axios";
 import Form from "react-bootstrap/Form";
 
 
-
+//signup
 import {useNavigate } from "react-router-dom"
 import "./Both.css";
-//Signup Page
 const Signup = () => {
   const [passShow, setPassShow] = useState(false);
   const [cpassShow, setCPassShow] = useState(false);

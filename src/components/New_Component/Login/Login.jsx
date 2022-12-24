@@ -10,7 +10,7 @@ import axios from "axios";
 
 
 
-//Login Page
+//Login
 const Login = () => {
   const [passShow, setPassShow] = useState(false);
   const [email, setEmail] = useState("");
