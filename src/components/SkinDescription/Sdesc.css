@@ -1,66 +1,64 @@
 
 
-buttonS,.pointerS{
+button,.pointer{
     cursor: pointer;
 
 }
 
-#biggyS{
-    width: 100%;
+.biggy{
+    padding: 20px 10px;
     font-family: 'Quicksand', sans-serif;
 }
 
-#biggyS *{
+.biggy *{
     font-weight: 500;
 }
-.mainS{
+
+
+
+.headerImg{
     width: 100%;
+    margin-bottom: 20px;
 }
 
-
-.headerImgS{
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
-.subMainS{
+.subMain{
     display: flex;
     border: 1px solid black;
-    width: 100%;
+    width: 90%;
     margin: auto;
 }
 
-.mainImgBoxS {
+.mainImgBox {
     width: 40%;
-    /* margin-right: 3rem; */
+    margin-right: 20px;
 }
 
-.rightMainS{
+.rightMain{
     width: 60%;
 }
 
-.mainImgBoxS img{
+.mainImgBox img{
     width: 100%;
     max-width: 360px;
     margin: auto;
 }
 
-.forSpansS span{
-   margin-right: 5rem;
+.forSpans span{
+   margin-right: 40px;
 }
 
-.timerS{
+.timer{
     height: 40px;
     background-color: #ff9c01;
     font-weight: bold;
 }
 
-.timerS div img{
+.timer div img{
     width: 30px;
     margin-right: 10px;
 }
 
-.titleS{
+.title{
     
     font-size: 19px;
     font-weight: 800;
@@ -68,40 +66,40 @@ buttonS,.pointerS{
     padding-bottom: 8px;
 }
 
-.forSpansS{
+.forSpans{
     padding-bottom: 8px;
 }
 
-.forSpansS span{
+.forSpans span{
      font-size: 15px;
      color: #333333;
      font-weight: bold;
 }
 
-.forSpansS span span{
+.forSpans span span{
     font-weight: 600;
     color: #999999;
 }
 
-.timerS{
+.timer{
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
 }
 
-.timerLeftS{
+.timerLeft{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.timerRightS{
+.timerRight{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.clock11S{
+.clock11{
     width: 100px;
     /* background-color: #fff; */
     box-sizing: border-box;
@@ -112,7 +110,7 @@ buttonS,.pointerS{
 /* Price */
 
 
-.priceS{
+.price{
     background-color: #f3f3f3;
     height: 70px;
     display: flex;
@@ -122,14 +120,14 @@ buttonS,.pointerS{
    
 }
 
-.labelS{
+.label{
     color: #999;
     font-weight: bold;
     font-size: 15px;
     width: 140px;
 }
 
-.price1S{
+.price1{
     font-family: inherit;
     color: #ff9c01;
     font-size: 28px;
@@ -138,14 +136,14 @@ buttonS,.pointerS{
 }
 
 
-.price2S{
+.price2{
     color: rgb(120, 117, 117);
     font-size: 18px;
     font-weight: bold;
     margin-right: 10px;
 }
 
-.price3S{
+.price3{
   background-color:#ff9c01 ;
   color: white;
   font-weight: bold;
@@ -154,21 +152,21 @@ buttonS,.pointerS{
 }
 
 /* Ship */
-.shipFromS{
+.shipFrom{
     padding-left: 10px;
     height: 60px;
     display: flex;
     align-items: center;
 }
 
-.shipNameS{
+.shipName{
     border: 1px solid #074ea3;
     color: #074ea3;
     font-weight: 600;
     padding: 7px;
 }
 
-.qtyS{
+.qty{
     height: 60px;
     padding-left: 10px;
     display: flex;
@@ -176,7 +174,7 @@ buttonS,.pointerS{
   
 }
 
-.counterS,.counterBoxS{
+.counter,.counterBox{
     width: 40px;
     height: 30px;
     font-size: 1.33rem;
@@ -186,21 +184,21 @@ buttonS,.pointerS{
 
 }
 
-.counterBoxS{
+.counterBox{
     width: 50px;
     border: 1px solid rgb(100, 99, 99);
     background-color: rgb(242, 242, 242);
 }
 
 /* Buttons */
-.buttonsS{
+.buttons{
    margin-top: 10px;
     display: flex;
     align-items: center;
 }
   
 
-.buyNowS,.addToCartS{
+.buyNow,.addToCart{
     border: .5px solid #ff9c01;
     font-size: 20px;
     font-weight: 900;
@@ -212,41 +210,41 @@ buttonS,.pointerS{
 
 }
 
-.addToCartS{
+.addToCart{
     background-color: #ff9c01;
     color: white;
 }
 
-.addToCartS:active{
+.addToCart:active{
     background-color: rgb(71, 196, 36);
     border: .5px solid #0fe42b;
 }
 
 
 
-.wishListS{
+.wishList{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.wishListS span{
+.wishList span{
     color: #333333;
 }
 
-.wishListS img{
+.wishList img{
     width: 25px;
     margin-right: 5px;
     
 }
 
-.paypalS{
+.paypal{
     margin-top: -10px;
     display: flex;
     align-items: center;
 }
 
-.paypalS img{
+.paypal img{
     width: 100px;
 }
 
@@ -254,25 +252,24 @@ buttonS,.pointerS{
     Footer
  **************/
 
- #footerS > div img{
-    width: 4rem;
+ .footer > div img{
+    width: 34px;
     margin: auto;
 
  }
 
 
-#footerS p{
-    font-size: 1rem;
+.footer p{
+    font-size: 14.5px;
     margin: 0;
     text-align: center;
 }
 
-#footerS {
+.footer {
     margin-top: 60px;
-    width: 90%;
     display: flex;
    justify-content: space-between;
-   gap: 1rem;
+   gap: 12px;
    padding: 0;
 
     
@@ -280,32 +277,32 @@ buttonS,.pointerS{
 
 
 @media (max-width:850px){
-    .subMainS{
+    .subMain{
         flex-direction: column;
     }
 
-    .mainImgBoxS{
+    .mainImgBox{
         width: 100%;
 
     }
 
-    .rightMainS{
+    .rightMain{
         width: 100%;
         padding: 20px;
     }
 
-    .addToCartS, .buyNowS{
+    .addToCart, .buyNow{
        width:300px ;
        text-align: center;
        margin: 10px 30px;
     }
 
-    .buttonsS{
+    .buttons{
         display: flex;
         flex-direction: column;
     }
 
-    .salesEndS{
+    .salesEnd{
         background: red;
         display: none;
         font-size: 1rem;

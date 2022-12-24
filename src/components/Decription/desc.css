@@ -1,64 +1,64 @@
 
 
-button,.pointerB{
+button,.pointer{
     cursor: pointer;
 
 }
 
-.biggyB{
+.biggy{
     padding: 20px 10px;
     font-family: 'Quicksand', sans-serif;
 }
 
-.biggyB *{
+.biggy *{
     font-weight: 500;
 }
 
 
 
-.headerImgB{
+.headerImg{
     width: 100%;
     margin-bottom: 20px;
 }
 
-.subMainB{
+.subMain{
     display: flex;
     border: 1px solid black;
     width: 90%;
     margin: auto;
 }
 
-.mainImgBoxB {
+.mainImgBox {
     width: 40%;
     margin-right: 20px;
 }
 
-.rightMainB{
+.rightMain{
     width: 60%;
 }
 
-.mainImgBoxB img{
+.mainImgBox img{
     width: 100%;
     max-width: 360px;
     margin: auto;
 }
 
-.forSpansB span{
+.forSpans span{
    margin-right: 40px;
 }
 
-.timerB{
+.timer{
     height: 40px;
     background-color: #ff9c01;
     font-weight: bold;
 }
 
-.timerB div img{
+.timer div img{
     width: 30px;
     margin-right: 10px;
 }
 
-.titleB{
+.title{
     
     font-size: 19px;
     font-weight: 800;
@@ -66,40 +66,40 @@ button,.pointerB{
     padding-bottom: 8px;
 }
 
-.forSpansB{
+.forSpans{
     padding-bottom: 8px;
 }
 
-.forSpansB span{
+.forSpans span{
      font-size: 15px;
      color: #333333;
      font-weight: bold;
 }
 
-.forSpansB span span{
+.forSpans span span{
     font-weight: 600;
     color: #999999;
 }
 
-.timerB{
+.timer{
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
 }
 
-.timerLeftB{
+.timerLeft{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.timerRightB{
+.timerRight{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.clock11B{
+.clock11{
     width: 100px;
     /* background-color: #fff; */
     box-sizing: border-box;
@@ -110,7 +110,7 @@ button,.pointerB{
 /* Price */
 
 
-.priceB{
+.price{
     background-color: #f3f3f3;
     height: 70px;
     display: flex;
@@ -120,14 +120,14 @@ button,.pointerB{
    
 }
 
-.labelB{
+.label{
     color: #999;
     font-weight: bold;
     font-size: 15px;
     width: 140px;
 }
 
-.price1B{
+.price1{
     font-family: inherit;
     color: #ff9c01;
     font-size: 28px;
@@ -136,14 +136,14 @@ button,.pointerB{
 }
 
 
-.price2B{
+.price2{
     color: rgb(120, 117, 117);
     font-size: 18px;
     font-weight: bold;
     margin-right: 10px;
 }
 
-.price3B{
+.price3{
   background-color:#ff9c01 ;
   color: white;
   font-weight: bold;
@@ -152,21 +152,21 @@ button,.pointerB{
 }
 
 /* Ship */
-.shipFromB{
+.shipFrom{
     padding-left: 10px;
     height: 60px;
     display: flex;
     align-items: center;
 }
 
-.shipNameB{
+.shipName{
     border: 1px solid #074ea3;
     color: #074ea3;
     font-weight: 600;
     padding: 7px;
 }
 
-.qtyB{
+.qty{
     height: 60px;
     padding-left: 10px;
     display: flex;
@@ -174,7 +174,7 @@ button,.pointerB{
   
 }
 
-.counterB,.counterBoxB{
+.counter,.counterBox{
     width: 40px;
     height: 30px;
     font-size: 1.33rem;
@@ -184,21 +184,21 @@ button,.pointerB{
 
 }
 
-.counterBoxB{
+.counterBox{
     width: 50px;
     border: 1px solid rgb(100, 99, 99);
     background-color: rgb(242, 242, 242);
 }
 
 /* Buttons */
-.buttonsB{
+.buttons{
    margin-top: 10px;
     display: flex;
     align-items: center;
 }
   
 
-.buyNowB,.addToCartB{
+.buyNow,.addToCart{
     border: .5px solid #ff9c01;
     font-size: 20px;
     font-weight: 900;
@@ -210,41 +210,41 @@ button,.pointerB{
 
 }
 
-.addToCartB{
+.addToCart{
     background-color: #ff9c01;
     color: white;
 }
 
-.addToCartB:active{
+.addToCart:active{
     background-color: rgb(71, 196, 36);
     border: .5px solid #0fe42b;
 }
 
 
 
-.wishListB{
+.wishList{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.wishListB span{
+.wishList span{
     color: #333333;
 }
 
-.wishListB img{
+.wishList img{
     width: 25px;
     margin-right: 5px;
     
 }
 
-.paypalB{
+.paypal{
     margin-top: -10px;
     display: flex;
     align-items: center;
 }
 
-.paypalB img{
+.paypal img{
     width: 100px;
 }
 
@@ -252,20 +252,20 @@ button,.pointerB{
     Footer
  **************/
 
- .footerB > div img{
+ .footer > div img{
     width: 34px;
     margin: auto;
 
  }
 
 
-.footerB p{
+.footer p{
     font-size: 14.5px;
     margin: 0;
     text-align: center;
 }
 
-.footerB {
+.footer {
     margin-top: 60px;
     display: flex;
    justify-content: space-between;
@@ -277,32 +277,32 @@ button,.pointerB{
 
 
 @media (max-width:850px){
-    .subMainB{
+    .subMain{
         flex-direction: column;
     }
 
-    .mainImgBoxB{
+    .mainImgBox{
         width: 100%;
 
     }
 
-    .rightMainB{
+    .rightMain{
         width: 100%;
         padding: 20px;
     }
 
-    .addToCartB, .buyNowB{
+    .addToCart, .buyNow{
        width:300px ;
        text-align: center;
        margin: 10px 30px;
     }
 
-    .buttonsB{
+    .buttons{
         display: flex;
         flex-direction: column;
     }
 
-    .salesEndB{
+    .salesEnd{
         background: red;
         display: none;
         font-size: 1rem;
