@@ -7,7 +7,7 @@ function Footer() {
     <>
       <div className={styles.container}>
         <div className={styles.div1}>
-          <img style={{ height: "120px",marginLeft:"530px" }} src="./CosmoStore.png" alt="" />
+          <img style={{ height: "120px",width:"20%",marginLeft:"40%" }} src="./CosmoStore.png" alt="" />
         </div>
         <div className={styles.div2}>
           <a href='https://www.facebook.com/trySUGAR/' target="_blank"><img className={styles.imgdiv1} src="https://in.sugarcosmetics.com/desc-images/facebook.svg" alt="" /></a>
@@ -60,9 +60,9 @@ function Footer() {
             <div className={styles.innerdiv3}>
               <div className={styles.gtc}>
                 <p style={{ fontSize: "large" }}>GET THE NEW SUGAR APP TODAY!</p>
-                <p style={{ width: "400px", fontSize: "14px", color: "rgb(131,131,131)" ,marginTop:"3px" }}>Tap into a better shopping experience.</p>
+                <p style={{ width: "100%", fontSize: "14px", color: "rgb(131,131,131)" ,marginTop:"3px" }}>Tap into a better shopping experience.</p>
               </div>
-              <div style={{ display: "flex", gap: "20px"}}>
+              <div style={{ display: "block", gap: "20px"}}>
                 <a href='https://sugarcosmetics.app.link/WebFApp' target="_blank"><img style={{ height: "39px", width: "132px", marginTop: "15px" }} src="https://in.sugarcosmetics.com/playstore.png" alt="" /></a>
                 <a href='https://sugarcosmetics.app.link/WebFApp' target="_blank"><img style={{ height: "39px", width: "132px", marginTop: "15px" }} src="https://in.sugarcosmetics.com/apple-store.png" alt="" /></a>
               </div>
