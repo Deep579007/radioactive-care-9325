@@ -10,7 +10,7 @@ import axios from "axios";
 import Form from "react-bootstrap/Form";
 
 
-
+//signup
 import {useNavigate } from "react-router-dom"
 import "./Both.css";
 const Signup = () => {
