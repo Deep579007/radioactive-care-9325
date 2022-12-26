@@ -1,7 +1,7 @@
 
 # sugarcosmetics-app-clone
 
-Project:Make a clone of https://cosmo-store-pi.vercel.app/
+Project:Make a clone of https://cosmo-rosy.vercel.app/
 
 
 
